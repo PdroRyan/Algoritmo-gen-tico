@@ -1,8 +1,9 @@
 Algoritmo Genético para Resolução de Labirintos
-📝 Descrição
+
+Descrição:
 Este projeto implementa um algoritmo genético para encontrar caminhos em labirintos. O algoritmo evolui uma população de soluções candidatas (indivíduos) através de gerações, aplicando operadores genéticos como seleção, crossover e mutação para melhorar progressivamente as soluções.
 
-� Funcionalidades Principais
+Funcionalidades Principais:
 Carregamento de labirintos a partir de arquivos
 
 Geração aleatória de indivíduos com movimentos válidos
@@ -15,7 +16,7 @@ Geração de novas populações com evolução progressiva
 
 Exportação de resultados para arquivos CSV
 
-🔧 Estrutura do Código
+Estrutura do Código:
 Estruturas de Dados Principais
 No: Representa um indivíduo com seu genótipo (sequência de movimentos) e métricas
 
@@ -60,7 +61,7 @@ salvar_lista_csv(): Exporta resultados para CSV
 
 liberar_lista(), liberar_matriz(): Gerenciamento de memória
 
-📊 Métricas de Avaliação
+Métricas de Avaliação:
 O fitness de cada solução considera:
 
 Distância ao objetivo final
@@ -71,7 +72,7 @@ Penalização por caminhos repetidos
 
 Recompensa por comprimento do caminho
 
-▶️ Como Usar
+Como Usar:
 Prepare um arquivo de labirinto no formato especificado
 
 Inicialize a população com cria_lista() e insere_elementos()
@@ -80,7 +81,7 @@ Itere chamando nova_geracao() para evoluir a população
 
 Acompanhe os melhores indivíduos com imprimir() ou salvar_lista_csv()
 
-⚙️ Configurações
+Configurações:
 Tamanho da população: 100 indivíduos
 
 Tamanho da elite: 5 indivíduos
@@ -89,13 +90,12 @@ Taxa de mutação: 5%
 
 Comprimento máximo do genótipo: 100 movimentos
 
-📌 Requisitos
+Requisitos:
 Compilador C compatível com C11
 
 Bibliotecas padrão: stdio.h, stdlib.h, string.h, math.h, time.h
 
-📄 Formato do Arquivo de Labirinto
-
+Formato do Arquivo de Labirinto:
 N M
 <mapa com N linhas e M colunas>
 Onde:
@@ -108,7 +108,7 @@ E marca a posição final
 
 . representa caminhos livres
 
-📈 Exemplo de Saída
+Exemplo de Saída:
 text
 Genotipo: CBDEBCDE...
 Fitness: 956.72
